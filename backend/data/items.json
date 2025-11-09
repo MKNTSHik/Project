@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "From Season 1 Trailer",
+        "description": "Official trailer for From Season 1",
+        "video_url": "https://www.youtube.com/watch?v=pDHqAj4eJcM",
+        "category_id": "digital"
+    },
+    {
+        "id": 2,
+        "name": "New Television/Streaming Trailers Playlist",
+        "description": "Playlist with new TV and streaming show trailers",
+        "video_url": "https://www.youtube.com/playlist?list=PLX8oFA0JuITObt2F3KmNnKkW40VzBZAHT",
+        "category_id": "digital"
+    },
+    {
+        "id": 3,
+        "name": "Digital Show – Interactive Live Show Channel",
+        "description": "Interactive live digital show channel",
+        "video_url": "https://www.youtube.com/channel/UCMxwh86khbHCgzxXAerteow",
+        "category_id": "tv_shows"
+    },
+    {
+        "id": 4,
+        "name": "Digital Show Videos – Cybersecurity Live Show",
+        "description": "Cybersecurity live show videos",
+        "video_url": "https://www.youtube.com/channel/UCMxwh86khbHCgzxXAerteow/videos",
+        "category_id": "tv_shows"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "label": "TV Shows",
+        "href": "/tv-shows",
+        "anchor": "#tv"
+    },
+    {
+        "label": "Films ans Series",
+        "href": "/films",
+        "anchor": "#films"
+    },
+    {
+        "label": "Digital",
+        "href": "/digital",
+        "anchor": "#digital"
+    },
+    {
+        "label": "Branded",
+        "href": "/branded",
+        "anchor": "#branded"
+    }
+]

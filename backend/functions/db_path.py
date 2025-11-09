@@ -1,0 +1,1 @@
+DB_PATH = "/Users/mkntsh/Downloads/Project/backend/database.db"
