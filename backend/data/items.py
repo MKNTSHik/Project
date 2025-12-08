@@ -1,4 +1,4 @@
-[
+ITEMS = [
     {
         "id": 1,
         "name": "From Season 1 Trailer",

@@ -1,4 +1,4 @@
-[
+SUBSCRIBERS = [
     {
         "id": 1,
         "email": "example@gmail.com",

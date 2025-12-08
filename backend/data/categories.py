@@ -1,4 +1,4 @@
-[
+CATEGORIES = [
     {
         "id": 1,
         "name": "tv_shows"  

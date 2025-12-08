@@ -33,5 +33,5 @@ def create_tables():
         ''')
         connection.commit()
 
-
-create_tables()
+if __name__ == "__main__":
+    create_tables()

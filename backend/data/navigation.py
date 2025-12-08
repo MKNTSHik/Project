@@ -1,4 +1,4 @@
-[
+NAVIGATION = [
     {
         "label": "TV Shows",
         "href": "/tv-shows",
