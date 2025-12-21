@@ -9,7 +9,7 @@ Project/
 
 ## Start (only backend)
 ```
-docker build -t backend
+docker build -t backend .
 docker run backend
 ```
 
