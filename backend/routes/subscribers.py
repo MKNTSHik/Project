@@ -1,14 +1,9 @@
 from fastapi import APIRouter, HTTPException
 from backend.database import subscribers
 from backend.functions import emailvalidation
-import sqlite3
 
 
 router = APIRouter(prefix="/newsletter/subscribe")
-
-
-# connection = sqlite3.connect("database.db")
-# cursor = connection.cursor()
 
 
 @router.post("")

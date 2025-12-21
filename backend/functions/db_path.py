@@ -1,1 +1,1 @@
-DB_PATH = "/Users/mkntsh/Downloads/Project/backend/database.db"
+DB_PATH = "./backend/database.db"

@@ -1,5 +1,4 @@
 import sqlite3
-import json
 from backend.models.categories import Categories
 from backend.models.items import Items
 from backend.models.subscribers import Subscribers
