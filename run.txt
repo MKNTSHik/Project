@@ -1,6 +1,3 @@
-in terminal run:
-cd /Users/mkntsh/Downloads/Project {path to project}
+cd {path to project}
 pip install -r requirements.txt
-python3 -m backend.database.createdb
-python3 -m backend.database.seed
 uvicorn backend.main:app --reload
