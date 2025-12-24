@@ -31,8 +31,8 @@ form.addEventListener("submit", async function(event) {
 }})
 
 
-const tv_shows_Button = getElementById("tv_shows_Button");
-const digital_Button = getElementById("digital_Button");
+const tv_shows_Button = document.getElementById("tv_shows_Button");
+const digital_Button = document.getElementById("digital_Button");
 const url_get_tv_shows = "http://localhost:8000/categories/tv_shows"
 const url_get_digital = "http://localhost:8000/categories/digital"
 

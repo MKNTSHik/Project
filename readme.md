@@ -2,15 +2,19 @@
 ## Structure
 ```
 Project/
-├── frontend/          # only html+css (пока что)
+├── frontend/          # html+css+js
 └── backend/           # Python FastAPI Server
 ```
 
 ## Start
-### Backend
+### Backend(пока не работает)
 ```
 docker build -t backend .
 docker run backend
+```
+### Backend 
+```
+uvicorn backend.main:app --port 8000 --reload
 ```
 ### Frontend
 ```

@@ -9,7 +9,7 @@ from fastapi import HTTPException
 async def add_subscriber(email):
     async with aiosqlite.connect(DB_PATH) as connection:
         if emailvalidation:
-            async with connection.execute(f'''SELECT * FROM subscribers WHERE email = ?''', (email,)) as cursor:
+            async with connection.execute(f'''SELECT * FROM subscribers WHERE email = ?''', (email.lower(),)) as cursor:
                 row = await cursor.fetchone()
                 if row:
                     raise HTTPException(status_code=400, detail="Email already subscribed")
