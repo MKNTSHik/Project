@@ -2,6 +2,7 @@ from fastapi import FastAPI
 import backend.routes.items as items
 import backend.routes.navigation as navigation
 import backend.routes.subscribers as subscribers
+import backend.routes.leads as leads
 from backend.database.createdb import create_tables
 from backend.database.seed import seed_all
 from fastapi.middleware.cors import CORSMiddleware
@@ -39,9 +40,4 @@ async def healthcheck():
 app.include_router(items.router)
 app.include_router(subscribers.router)
 app.include_router(navigation.router)
-
-
-
-
-
-
+app.include_router(leads.router)

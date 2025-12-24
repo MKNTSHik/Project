@@ -12,7 +12,7 @@ async def add_subscriber(email):
             async with connection.execute(f'''SELECT * FROM subscribers WHERE email = ?''', (email.lower(),)) as cursor:
                 row = await cursor.fetchone()
                 if row:
-                    raise HTTPException(status_code=400, detail="Email already subscribed")
+                    raise HTTPException(status_code=403, detail="Email already subscribed")
                 else:
                     await connection.execute(f'''INSERT INTO subscribers (email)
                                 VALUES (?)''', (email,))

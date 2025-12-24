@@ -31,6 +31,17 @@ def create_tables():
                 email TEXT NOT NULL UNIQUE
             )
         ''')
+
+
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS leads (
+                id INTEGER PRIMARY KEY,
+                name TEXT,
+                email TEXT NOT NULL UNIQUE,
+                message TEXT
+            )
+        ''')
+
         connection.commit()
 
 if __name__ == "__main__":
