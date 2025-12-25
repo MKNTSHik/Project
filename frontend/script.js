@@ -15,7 +15,7 @@ form.addEventListener("submit", async function(event) {
         }
         const response = await fetch(url_post_subscribers, {
             method: "POST",
-            headers: [{"Content-type": "application/json"}],
+            headers: {"Content-Type": "application/json"},
             body: JSON.stringify(formData)
         });
             if (response.ok) {
@@ -69,7 +69,7 @@ digital_Button.addEventListener("click", async function() {
 
 
 const leads_Button = document.getElementById("connect_Button");
-const leads_form = document.getElementById("contact_fame");
+const leads_form = document.getElementById("contact_frame");
 const leads_name = document.getElementById("name");
 const leads_email = document.getElementById("email1");
 const leads_message = document.getElementById("message");
@@ -82,7 +82,7 @@ leads_form.addEventListener("submit", async function(event) {
         leads_Button.disabled = true;
         const name = leads_name.value.trim();
         const email = leads_email.value.trim();
-        const message = leads_email.value.trim();
+        const message = leads_message.value.trim();
         try {
             const formData =  {
                 "name": name,
@@ -91,7 +91,7 @@ leads_form.addEventListener("submit", async function(event) {
             }
             const response = await fetch(url_post_leads, {
                 method: "POST",
-                headers: [{"Content-type": "application/json"}],
+                headers: {"Content-Type": "application/json"},
                 body: JSON.stringify(formData)
             });
             if (response.ok) {
@@ -102,7 +102,7 @@ leads_form.addEventListener("submit", async function(event) {
     } catch(error) {
                 console.error(`ошибка при отправке ${error}`);
             } finally {
-                submitButton.disabled = false;
+                leads_Button.disabled = false;
             }
         }
     });
